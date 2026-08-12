@@ -14,11 +14,20 @@ venv/
 .env.*
 
 # Data and experiment artifacts
-data/raw/
-data/processed/
-data/external/
-output/
-logs/
+data/raw/**
+!data/raw/.gitkeep
+data/processed/**
+!data/processed/.gitkeep
+!data/processed/*/
+data/processed/*/**
+!data/processed/*/.gitkeep
+data/external/**
+!data/external/.gitkeep
+!data/external/*/
+data/external/*/**
+!data/external/*/.gitkeep
+#output/
+#logs/
 monitoring/
 results/
 
