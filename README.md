@@ -1,82 +1,109 @@
-# Prerequisites
+# Intelligent Braking System
 
-## Create environment
-pip create -n braking_system python=3.9
-pip activate braking_system
+Multi-stage research pipeline for friction-aware adaptive braking using:
 
-## Install PyTorch with CUDA
-pip install pytorch torchvision torchaudio cudatoolkit=11.3 -c pytorch
+- Vision Transformer (ViT) for road-surface perception
+- Temporal sequence modeling for CAN-like vehicle signals
+- Cross-modal fusion
+- Physics-informed friction estimation (PINN)
+- SAC-based braking control and simulation
 
-## Install other dependencies
-pip install timm numpy pandas matplotlib opencv-python scikit-learn tqdm pyyaml
+## Project Layout
 
-## For MPC (optional)
-pip install casadi
+- `configs/`: model and control configs
+- `data/`: external, raw, and processed datasets
+- `models/`: model definitions
+- `scripts/`: preprocessing, training, evaluation, simulation, reporting
+- `output/`: metrics, plots, logs, reports, checkpoints
 
-## For CAN bus interface (optional)
-pip install python-can
+## Environment Setup
 
-## Training the Systems
+### Option A: venv (recommended for this repo)
 
-# Train ViT first
-python train.py --train-vit --data-dir data/train
+```powershell
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
+pip install --upgrade pip
+pip install -r requirements.txt
+```
 
-# Train full pipeline
-python train.py --train-all --data-dir data/train
+### Option B: conda
 
-# Or use main.py
-python main.py --train-all --data-dir data/train --save-models
+```powershell
+conda create -n braking_system python=3.9 -y
+conda activate braking_system
+pip install -r requirements.txt
+```
 
-## Running Simulation
+Optional dependencies:
 
-python main.py --simulate --output-dir output
+```powershell
+pip install casadi      # MPC experiments
+pip install python-can  # CAN interface utilities
+```
 
-## Evaluating Models
+## Dataset Preparation
 
-python main.py --evaluate --data-dir data/test --output-dir output
+1. Place datasets under `data/external/` (THU, Mendeley, DAWN, BDD100K, KITTI as available).
+2. Run dataset analysis:
 
+```powershell
+python scripts/analyze_datasets.py
+```
 
+3. Run preprocessing:
 
-# Complete Workflow (Recommended)
+```powershell
+python scripts/preprocess_data.py
+```
 
-# Step 1: Setup environment (only needed once)
-python main.py --step setup
+Public dataset ingestion helpers:
 
-# Step 2: Download datasets (manual download recommended)
-python main.py --step download
-
-# Step 3: Analyze datasets
-python main.py --step analyze
-
-# Step 4: Preprocess data
-python main.py --step preprocess
-
-# Step 5: Train all models
-python main.py --step train
-
-# Step 6: Evaluate models
-python main.py --step evaluate
-
-# Step 7: Run simulations
-python main.py --step simulate
-
-# Step 8: Generate reports
-python main.py --step report
-
-# Run everything in sequence (takes several hours)
-python main.py --all
-
-
-# Public Dataset Ingestion (KITTI / BDD100K)
-
-# KITTI raw sequence -> custom synchronized dataset format
+```powershell
 python scripts/prepare_kitti_for_pipeline.py --kitti-seq-dir data/external/kitti_raw/2011_09_26_drive_0001_sync --output-dir data/train_kitti_0001 --clear-output
-
-# BDD100K videos -> custom synchronized dataset format
 python scripts/prepare_bdd100k_for_pipeline.py --video-dir data/external/bdd100k/videos/train --output-dir data/train_bdd100k --sample-fps 5 --clear-output
+```
 
-# Optional: provide BDD labels JSON for weather/scene-informed surface tags
-python scripts/prepare_bdd100k_for_pipeline.py --video-dir data/external/bdd100k/videos/train --labels-json data/external/bdd100k/labels/bdd100k_labels_images_train.json --output-dir data/train_bdd100k --sample-fps 5 --clear-output
+## Training
 
-# Convert custom dataset into processed tensors for training/evaluation
-python scripts/preprocess_data.py --only-custom --custom-dir data/train_bdd100k
+Run full staged training:
+
+```powershell
+python scripts/train.py
+```
+
+Or run orchestrated workflow step-by-step:
+
+```powershell
+python main.py --step analyze
+python main.py --step preprocess
+python main.py --step train
+```
+
+## Evaluation and Simulation
+
+```powershell
+python scripts/evaluate.py
+python scripts/simulate.py
+python scripts/report.py
+```
+
+Or via orchestrator:
+
+```powershell
+python main.py --step evaluate
+python main.py --step simulate
+python main.py --step report
+```
+
+## Full Pipeline
+
+```powershell
+python main.py --all
+```
+
+## Practical Runtime Notes
+
+- Full-data runs are compute-intensive.
+- For faster experiments, sample caps can be controlled through environment variables used by training/evaluation scripts (for example `IBS_MAX_TRAIN_SAMPLES`, `IBS_MAX_VAL_SAMPLES`, `IBS_MAX_EVAL_SAMPLES`).
+- Generated artifacts are written to `output/`.
