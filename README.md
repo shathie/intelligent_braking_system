@@ -44,7 +44,24 @@ pip install python-can  # CAN interface utilities
 
 ## Dataset Preparation
 
-1. Place datasets under `data/external/` (THU, Mendeley, DAWN, BDD100K, KITTI as available).
+1. Download datasets from the sources below and place them under `data/external/`.
+
+Dataset source URLs:
+
+- THU Road Surface dataset: https://thu-rsxd.com/dxhdiefb/ (use the road-surface release used in your experiments)
+- Mendeley vehicle road-surface dataset: https://data.mendeley.com/
+- DAWN adverse weather dataset: https://data.mendeley.com/datasets/766ygrbt8y/3
+- BDD100K: https://www.bdd100k.com/
+- KITTI Raw: https://www.cvlibs.net/datasets/kitti/raw_data.php
+
+Expected local locations:
+
+- `data/external/thu_road_surface/`
+- `data/external/mendeley_vehicle/`
+- `data/external/dawn/`
+- `data/external/bdd100k/`
+- `data/external/kitti_raw/`
+
 2. Run dataset analysis:
 
 ```powershell
