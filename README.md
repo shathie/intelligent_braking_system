@@ -50,9 +50,9 @@ Dataset source URLs:
 
 - THU Road Surface dataset: https://thu-rsxd.com/dxhdiefb/ (use the road-surface release used in your experiments)
 - Mendeley vehicle road-surface dataset: https://data.mendeley.com/datasets/766ygrbt8y/3
-- DAWN adverse weather dataset: https://data.mendeley.com/datasets/766ygrbt8y/3
-- BDD100K: https://www.bdd100k.com/
-- KITTI Raw: https://www.cvlibs.net/datasets/kitti/raw_data.php
+- DAWN adverse weather dataset: https://www.kaggle.com/datasets/shuvoalok/dawn-dataset/
+- BDD100K: https://www.kaggle.com/datasets/marquis03/bdd100k
+- KITTI: https://www.cvlibs.net/datasets/kitti-360/
 
 Expected local locations:
 
