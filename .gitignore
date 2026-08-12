@@ -1,0 +1,47 @@
+# Python cache/artifacts
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual environments
+.venv/
+.venv-1/
+venv/
+
+# Environment/config secrets
+.env
+.env.*
+
+# Data and experiment artifacts
+data/raw/
+data/processed/
+data/external/
+output/
+logs/
+monitoring/
+results/
+
+# Model/checkpoint/binary artifacts
+*.pt
+*.pth
+*.ckpt
+*.h5
+*.onnx
+*.npy
+*.npz
+
+# Misc generated files
+*.log
+*.tmp
+*.bak
+
+# Editor/OS
+.vscode/
+.idea/
+Thumbs.db
+.DS_Store
+
+# Local bootstrap tooling
+tools/mingit/
+tools/mingit.zip

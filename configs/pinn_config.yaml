@@ -1,0 +1,22 @@
+model:
+  input_dim: 512  # From fusion network
+  hidden_dims: [256, 128, 64]
+  output_dim: 1   # Friction coefficient μ
+  activation: "tanh"
+
+physics:
+  constraints:
+    - "longitudinal_dynamics"
+    - "tire_force_model"
+    - "wheel_dynamics"
+    - "energy_conservation"
+    - "friction_bounds"
+  weights:
+    data_loss: 1.0
+    physics_loss: 0.5
+    regularization: 0.01
+
+training:
+  batch_size: 16
+  learning_rate: 1e-4
+  epochs: 150
