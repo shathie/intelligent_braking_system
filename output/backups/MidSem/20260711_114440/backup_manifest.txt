@@ -1,0 +1,5 @@
+backup_timestamp=20260711_114440
+workspace=C:\wrk\Dissertation\intelligent_braking_system
+included_items=output\reports, output\metrics, output\models, output\logs, output\plots, output\results, configs, scripts, models, requirements.txt, README.md
+created_at=2026-07-11T11:44:42
+notes=final post-fix snapshot

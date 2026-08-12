@@ -1,0 +1,2 @@
+Latest synchronized terminal completion status is captured in run_20260711_pipeline_completion_summary.txt and current_run_terminal_snapshot_20260711_0800.txt.
+This marker file can be overwritten periodically for 'latest' pointer behavior.

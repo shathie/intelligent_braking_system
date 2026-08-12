@@ -1,0 +1,5 @@
+backup_timestamp=20260729_145716
+workspace=C:\wrk\Dissertation\intelligent_braking_system
+created_at=2026-07-29T14:57:17
+auto_backup=true
+included_items=output/reports, output/metrics, output/models, output/logs, output/plots, output/results

@@ -1,0 +1,23 @@
+Post-fix status update (2026-07-11)
+
+1) SAC issue root cause and fix
+- Root cause: SAC optimizer learning-rate values could be loaded as strings from YAML, causing torch optimizer type checks to fail.
+- Fix applied: models/sac_agent.py now coerces numeric hyperparameters to float/int safely and initializes alpha correctly.
+- Validation: SACAgent instantiated from configs/control_config.yaml and train_step executed successfully.
+
+2) Evaluation issue root cause and fix
+- Root cause: temporal model returns tuple (features, recon), but evaluator expected tensor; also list arithmetic and numpy float serialization issues.
+- Fix applied: scripts/evaluate.py now extracts temporal features safely, normalizes arrays for regression metrics, and serializes JSON-safe values.
+- Validation: evaluate_pinn completed and wrote output/metrics/pinn_metrics.json.
+
+3) Simulation issue root cause and fix
+- Root cause: simulator fed 12-feature CAN sequence into temporal model expecting 17 features.
+- Fix applied: scripts/simulate.py now aligns CAN feature dimensions dynamically and extracts temporal features from tuple outputs.
+- Validation: run_single_simulation completed successfully.
+
+Current metrics artifacts:
+- output/metrics/vit_metrics.json
+- output/metrics/pinn_metrics.json
+
+Backup snapshot created:
+- output/backups/20260711_114411

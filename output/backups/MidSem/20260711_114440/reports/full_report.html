@@ -1,0 +1,212 @@
+
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <title>Intelligent Multi-Modal Braking System - Full Report</title>
+            <style>
+                body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 0; background-color: #f5f5f5; }
+                .container { max-width: 1200px; margin: 0 auto; padding: 20px; }
+                h1 { color: #2c3e50; border-bottom: 3px solid #3498db; padding-bottom: 10px; }
+                h2 { color: #2c3e50; border-bottom: 1px solid #ddd; padding-bottom: 5px; margin-top: 30px; }
+                h3 { color: #7f8c8d; }
+                .section { background-color: white; padding: 20px; border-radius: 5px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); margin-bottom: 20px; }
+                .highlight { background-color: #e3f2fd; padding: 3px 8px; border-radius: 3px; font-weight: bold; }
+                .success { background-color: #e8f5e9; padding: 3px 8px; border-radius: 3px; font-weight: bold; color: #27ae60; }
+                .warning { background-color: #fff3e0; padding: 3px 8px; border-radius: 3px; font-weight: bold; color: #f39c12; }
+                .danger { background-color: #ffebee; padding: 3px 8px; border-radius: 3px; font-weight: bold; color: #e74c3c; }
+                table { border-collapse: collapse; width: 100%; margin: 15px 0; }
+                th, td { border: 1px solid #ddd; padding: 10px; text-align: left; }
+                th { background-color: #f2f2f2; }
+                tr:nth-child(even) { background-color: #f9f9f9; }
+                img { max-width: 100%; height: auto; margin: 10px 0; display: block; }
+                .metrics-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; margin: 15px 0; }
+                .metric-card { background-color: #f8f9fa; padding: 15px; border-radius: 5px; text-align: center; }
+                .metric-value { font-size: 24px; font-weight: bold; color: #3498db; }
+                .metric-label { font-size: 12px; color: #7f8c8d; }
+                .header { background-color: #3498db; color: white; padding: 20px; border-radius: 5px 5px 0 0; }
+                .footer { background-color: #2c3e50; color: white; padding: 15px; text-align: center; border-radius: 0 0 5px 5px; margin-top: 20px; }
+            </style>
+        </head>
+        <body>
+            <div class="header">
+                <h1>Intelligent Multi-Modal Braking System</h1>
+                <p>Comprehensive Project Report</p>
+            </div>
+            
+            <div class="container">
+                <div class="section">
+                    <h2>Executive Summary</h2>
+                    <p><strong>Generated:</strong> 2026-07-11 11:33:56</p>
+                    <p><strong>Project:</strong> Intelligent Multi-Modal Braking System for Autonomous and ADAS Applications</p>
+                    
+                    <div class="metrics-grid">
+                        <div class="metric-card">
+                            <div class="metric-value">1</div>
+                            <div class="metric-label">Models Trained</div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-value">2</div>
+                            <div class="metric-label">Datasets Used</div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-value">0.0%</div>
+                            <div class="metric-label">Avg Classification Accuracy</div>
+                        </div>
+                        <div class="metric-card">
+                            <div class="metric-value">0.0m</div>
+                            <div class="metric-label">Avg Stopping Distance</div>
+                        </div>
+                    </div>
+                    
+                    
+        <div style="background-color: #f8f9fa; padding: 15px; border-radius: 5px; margin: 15px 0;">
+            <p><strong>This report summarizes the development and evaluation of an intelligent multi-modal braking system
+            for autonomous vehicles and ADAS applications.</strong></p>
+
+            <p>The system integrates:</p>
+            <ul>
+                <li><strong>Vision Transformers (ViT)</strong> for road surface classification from underbody cameras</li>
+                <li><strong>Temporal Networks</strong> for processing CAN bus sensor data</li>
+                <li><strong>Multi-Modal Fusion</strong> to combine visual and inertial features</li>
+                <li><strong>Physics-Informed Neural Networks (PINNs)</strong> for friction estimation</li>
+                <li><strong>Deep Reinforcement Learning (SAC)</strong> for optimal braking control</li>
+            </ul>
+
+            <p><strong>Key Achievements:</strong></p>
+            <ul>
+                <li>[OK] Road surface classification accuracy: <span class='success'>0.0%</span></li>
+            </ul>
+        </div>
+        
+                </div>
+                
+                
+        <div class="section">
+            <h2>Dataset Analysis</h2>
+            <p>Detailed dataset analysis is available in the separate report.</p>
+            <p><a href="dataset_analysis_report.html">View Dataset Analysis Report</a></p>
+            
+            <h3>Datasets Used:</h3>
+            <ul>
+                <li><strong>Tsinghua University Road Surface Dataset</strong> - Road surface images with classifications</li>
+                <li><strong>Mendeley Multi-Modal Vehicle Dataset</strong> - CAN bus data with synchronized images and friction labels</li>
+            </ul>
+        </div>
+        
+                
+                
+            <div class="section">
+                <h2>Model Training</h2>
+                <p>Training history not available. Run <code>python scripts/train.py</code> to train models.</p>
+            </div>
+            
+                
+                
+        <div class="section">
+            <h2>Model Evaluation</h2>
+        
+            <h3>Vision Transformer (ViT)</h3>
+            <div class="metrics-grid">
+                <div class="metric-card">
+                    <div class="metric-value">0.00%</div>
+                    <div class="metric-label">Classification Accuracy</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value">0.1574</div>
+                    <div class="metric-label">F1 Score (Macro)</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-value">0.3197</div>
+                    <div class="metric-label">F1 Score (Weighted)</div>
+                </div>
+            </div>
+            <img src="../plots/confusion_matrix.png" alt="ViT Confusion Matrix" style="width: 40%; margin: 0 auto; display: block;">
+            </div>
+                
+                
+            <div class="section">
+                <h2>System Simulation</h2>
+                <p>Simulation results not available. Run <code>python scripts/simulate.py</code> to generate.</p>
+            </div>
+            
+                
+                
+        <div class="section">
+            <h2>Recommendations & Next Steps</h2>
+            <ul>
+                <li>[WARNING] <span class='warning'>ViT accuracy is below 90%. </span> Consider using a larger model (ViT-Large), more training data, or better data augmentation.</li>
+            </ul>
+            
+            <h3>Future Work</h3>
+            <ul>
+                <li><strong>Hardware Deployment:</strong> Deploy the system on a real vehicle with CAN bus interface</li>
+                <li><strong>Real-World Testing:</strong> Test on various road surfaces in different weather conditions</li>
+                <li><strong>Edge Optimization:</strong> Optimize models for edge devices (NVIDIA DRIVE, Jetson, etc.)</li>
+                <li><strong>Certification:</strong> Prepare documentation for automotive safety certification (ISO 26262)</li>
+                <li><strong>Integration:</strong> Integrate with existing ADAS and autonomous driving systems</li>
+                <li><strong>Continuous Learning:</strong> Implement online learning to adapt to new environments</li>
+            </ul>
+        </div>
+        
+                
+                <div class="section">
+                    <h2>Appendix</h2>
+                    <h3>Project Structure</h3>
+                    <pre>
+intelligent_braking_system/
+├── configs/
+│   ├── vit_config.yaml
+│   ├── temporal_config.yaml
+│   ├── fusion_config.yaml
+│   ├── pinn_config.yaml
+│   └── control_config.yaml
+├── data/
+│   ├── external/
+│   │   ├── thu_road_surface/
+│   │   └── mendeley_vehicle/
+│   └── processed/
+├── models/
+│   ├── vit.py
+│   ├── temporal_network.py
+│   ├── fusion_network.py
+│   ├── pinn.py
+│   ├── sac_agent.py
+│   └── mpc_controller.py
+├── utils/
+│   ├── __init__.py
+│   ├── preprocessing.py
+│   ├── physics.py
+│   ├── can_bus.py
+│   ├── visualization.py
+│   └── metrics.py
+├── scripts/
+│   ├── setup.py
+│   ├── download_datasets.py
+│   ├── analyze_datasets.py
+│   ├── preprocess_data.py
+│   ├── train.py
+│   ├── evaluate.py
+│   ├── simulate.py
+│   └── report.py
+├── output/
+│   ├── models/
+│   ├── plots/
+│   ├── metrics/
+│   └── reports/
+└── results/
+        </pre>
+                    
+                    <h3>Configuration Files</h3>
+                    <p>All configuration files are available in the <code>configs/</code> directory.</p>
+                    
+                    <h3>Dependencies</h3>
+                    <p>See <code>requirements.txt</code> for all Python dependencies.</p>
+                </div>
+                
+                <div class="footer">
+                    <p>Intelligent Multi-Modal Braking System - 2026</p>
+                </div>
+            </div>
+        </body>
+        </html>
+        

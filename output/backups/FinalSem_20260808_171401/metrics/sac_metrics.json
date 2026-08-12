@@ -1,0 +1,50 @@
+{
+  "dry": {
+    "stopping_distance": 25.13189214555263,
+    "stopping_distance_std": 0.0,
+    "stopping_time": 2.5099999999999905,
+    "stopping_time_std": 0.0,
+    "max_jerk": 0.9632515544907072,
+    "max_jerk_std": 0.0,
+    "stop_success_rate": 1.0,
+    "timeout_count": 0,
+    "eval_max_steps": 2500,
+    "num_episodes": 10
+  },
+  "wet": {
+    "stopping_distance": 50.147422329764716,
+    "stopping_distance_std": 0.0,
+    "stopping_time": 4.979999999999938,
+    "stopping_time_std": 0.0,
+    "max_jerk": 0.16374157580036908,
+    "max_jerk_std": 0.0,
+    "stop_success_rate": 1.0,
+    "timeout_count": 0,
+    "eval_max_steps": 2500,
+    "num_episodes": 10
+  },
+  "icy": {
+    "stopping_distance": 194.12365116231564,
+    "stopping_distance_std": 0.0,
+    "stopping_time": 19.030000000000175,
+    "stopping_time_std": 0.0,
+    "max_jerk": 0.012586347078402671,
+    "max_jerk_std": 0.0,
+    "stop_success_rate": 1.0,
+    "timeout_count": 0,
+    "eval_max_steps": 2500,
+    "num_episodes": 10
+  },
+  "rough": {
+    "stopping_distance": 33.502584701571045,
+    "stopping_distance_std": 0.0,
+    "stopping_time": 3.3399999999999728,
+    "stopping_time_std": 0.0,
+    "max_jerk": 0.45711300186654924,
+    "max_jerk_std": 0.0,
+    "stop_success_rate": 1.0,
+    "timeout_count": 0,
+    "eval_max_steps": 2500,
+    "num_episodes": 10
+  }
+}

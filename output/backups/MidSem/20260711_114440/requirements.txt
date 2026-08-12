@@ -1,0 +1,29 @@
+cat > requirements.txt << 'EOF'
+# Core
+numpy==1.23.5
+pandas==1.5.3
+scipy==1.10.1
+
+# PyTorch
+torch==1.12.1+cu113
+torchvision==0.13.1+cu113
+torchaudio==0.12.1
+timm==0.6.12
+
+# Visualization
+matplotlib==3.7.1
+seaborn==0.12.2
+opencv-python==4.7.0.72
+scikit-image==0.20.0
+
+# Utilities
+tqdm==4.65.0
+pyyaml==6.0
+scikit-learn==1.2.2
+
+# Optional (for MPC)
+# casadi==3.6.3
+
+# Optional (for CAN bus)
+# python-can==4.2.0
+EOF

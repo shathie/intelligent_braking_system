@@ -1,0 +1,44 @@
+Run date: 2026-07-11
+Command: main.py --all with IBS_EPOCH_OVERRIDE=25, IBS_MAX_TRAIN_SAMPLES=512, IBS_MAX_VAL_SAMPLES=256, IBS_MAX_EVAL_SAMPLES=256
+
+Overall pipeline status: COMPLETED WITH PARTIAL FAILURES
+
+Successful stages:
+- Download datasets script executed.
+- Analyze datasets completed.
+- Preprocess data completed.
+- ViT training completed (best val acc 97.66%).
+- Temporal training completed.
+- Fusion training completed.
+- PINN training completed.
+- Report generation completed (output/reports/full_report.html).
+
+Failed stages / exceptions:
+1) SAC training failed in train step
+   - File: models/sac_agent.py (called from scripts/train.py)
+   - Error: TypeError: '<=' not supported between instances of 'float' and 'str'
+   - Cause: learning rate parsed as string before torch.optim.Adam
+
+2) PINN evaluation failed in evaluate step
+   - File: scripts/evaluate.py
+   - Error: TypeError: expected Tensor as element 0 in argument 0, but got tuple
+   - Cause: temporal model returns tuple, evaluation path assumes Tensor
+
+3) Simulation failed in simulate step
+   - File: scripts/simulate.py
+   - Error: RuntimeError: input.size(-1) must be equal to input_size. Expected 17, got 12
+   - Cause: simulated temporal input feature size mismatch
+
+Final metrics available:
+- output/metrics/vit_metrics.json
+  accuracy: 0.3750
+  f1_macro: 0.1574
+  f1_weighted: 0.3197
+
+Metrics unavailable due failed steps:
+- PINN regression metrics: unavailable
+- Control/SAC metrics: unavailable
+
+Generated report artifacts:
+- output/reports/full_report.html
+- output/reports/dataset_analysis_report.html

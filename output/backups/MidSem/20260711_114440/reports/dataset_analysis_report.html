@@ -1,0 +1,83 @@
+
+            <!DOCTYPE html>
+            <html>
+            <head>
+                <title>Dataset Analysis Report</title>
+                <style>
+                    body { font-family: Arial, sans-serif; margin: 20px; }
+                    h1 { color: #333; }
+                    h2 { color: #555; border-bottom: 1px solid #ddd; padding-bottom: 5px; }
+                    table { border-collapse: collapse; width: 100%; margin-bottom: 20px; }
+                    th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+                    th { background-color: #f2f2f2; }
+                    .stats { background-color: #f9f9f9; padding: 15px; border-radius: 5px; }
+                    img { max-width: 100%; height: auto; margin: 10px 0; }
+                </style>
+            </head>
+            <body>
+                <h1>Dataset Analysis Report</h1>
+                <p>Generated on: 2026-07-11 08:49:14</p>
+                
+                <h2>Tsinghua Road Surface Dataset</h2>
+                <div class="stats">
+                    <h3>Statistics</h3>
+                    <p><strong>Total Samples:</strong> 0</p>
+                    <h4>Class Distribution:</h4>
+                    <table>
+                        <tr><th>Class</th><th>Count</th><th>Percentage</th></tr>
+                        
+                    </table>
+                    <h4>Friction Coefficient by Class:</h4>
+                    <table>
+                        <tr><th>Class</th><th>Min</th><th>Max</th><th>Mean</th><th>Std</th></tr>
+                        
+                    </table>
+                </div>
+                <h3>Visualizations</h3>
+                <img src="thu_class_distribution.png" alt="Class Distribution">
+                <img src="thu_mu_distribution.png" alt="Friction Distribution">
+                
+                <h2>Mendeley Vehicle Dataset</h2>
+                <div class="stats">
+                    <h3>Statistics</h3>
+                    <p><strong>Total CAN Messages:</strong> 0</p>
+                    <p><strong>Duration:</strong> 0.00 seconds</p>
+                    <p><strong>Sample Rate:</strong> 0.0 Hz</p>
+                    <h4>Signal Statistics:</h4>
+                    <table>
+                        <tr><th>Signal</th><th>Min</th><th>Max</th><th>Mean</th><th>Std</th><th>Missing</th></tr>
+                        
+                    </table>
+                </div>
+                <h3>Visualizations</h3>
+                <img src="mendeley_class_distribution.png" alt="Mendeley Class Distribution">
+                <img src="mendeley_mu_distribution.png" alt="Friction Distribution">
+                <img src="signal_correlations.png" alt="Signal Correlations">
+
+                <h2>DAWN Weather Dataset</h2>
+                <div class="stats">
+                    <h3>Statistics</h3>
+                    <p><strong>Total Samples:</strong> 1027</p>
+                    <h4>Weather Distribution:</h4>
+                    <table>
+                        <tr><th>Weather</th><th>Count</th><th>Percentage</th></tr>
+                        <tr><td>fog</td><td>300</td><td>29.2%</td></tr><tr><td>rain</td><td>200</td><td>19.5%</td></tr><tr><td>sand</td><td>323</td><td>31.5%</td></tr><tr><td>snow</td><td>204</td><td>19.9%</td></tr>
+                    </table>
+                </div>
+                <h3>Visualizations</h3>
+                <img src="dawn_class_distribution.png" alt="DAWN Weather Distribution">
+                <img src="dawn_mu_distribution.png" alt="DAWN Estimated Friction">
+                
+                <h2>Custom Dataset</h2>
+                <div class="stats">
+                    <p><strong>Total Samples:</strong> 0</p>
+                    <p><strong>Total Images:</strong> 0</p>
+                </div>
+                
+                <h2>Recommendations</h2>
+                <div class="stats">
+                    <p>[OK] Datasets look good! No major issues detected.</p>
+                </div>
+            </body>
+            </html>
+            

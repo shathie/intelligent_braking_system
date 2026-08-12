@@ -1,0 +1,83 @@
+
+            <!DOCTYPE html>
+            <html>
+            <head>
+                <title>Dataset Analysis Report</title>
+                <style>
+                    body { font-family: Arial, sans-serif; margin: 20px; }
+                    h1 { color: #333; }
+                    h2 { color: #555; border-bottom: 1px solid #ddd; padding-bottom: 5px; }
+                    table { border-collapse: collapse; width: 100%; margin-bottom: 20px; }
+                    th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+                    th { background-color: #f2f2f2; }
+                    .stats { background-color: #f9f9f9; padding: 15px; border-radius: 5px; }
+                    img { max-width: 100%; height: auto; margin: 10px 0; }
+                </style>
+            </head>
+            <body>
+                <h1>Dataset Analysis Report</h1>
+                <p>Generated on: 2026-07-30 00:22:14</p>
+                
+                <h2>Tsinghua Road Surface Dataset</h2>
+                <div class="stats">
+                    <h3>Statistics</h3>
+                    <p><strong>Total Samples:</strong> 958941</p>
+                    <h4>Class Distribution:</h4>
+                    <table>
+                        <tr><th>Class</th><th>Count</th><th>Percentage</th></tr>
+                        <tr><td>dry_asphalt_severe</td><td>6610</td><td>0.7%</td></tr><tr><td>dry_asphalt_slight</td><td>27023</td><td>2.8%</td></tr><tr><td>dry_asphalt_smooth</td><td>76231</td><td>7.9%</td></tr><tr><td>dry_concrete_severe</td><td>38850</td><td>4.1%</td></tr><tr><td>dry_concrete_slight</td><td>16092</td><td>1.7%</td></tr><tr><td>dry_concrete_smooth</td><td>77938</td><td>8.1%</td></tr><tr><td>dry_gravel</td><td>63417</td><td>6.6%</td></tr><tr><td>dry_mud</td><td>49348</td><td>5.1%</td></tr><tr><td>fresh_snow</td><td>73560</td><td>7.7%</td></tr><tr><td>ice</td><td>54092</td><td>5.6%</td></tr><tr><td>melted_snow</td><td>61093</td><td>6.4%</td></tr><tr><td>water_asphalt_severe</td><td>2581</td><td>0.3%</td></tr><tr><td>water_asphalt_slight</td><td>4913</td><td>0.5%</td></tr><tr><td>water_asphalt_smooth</td><td>78390</td><td>8.2%</td></tr><tr><td>water_concrete_severe</td><td>5702</td><td>0.6%</td></tr><tr><td>water_concrete_slight</td><td>3924</td><td>0.4%</td></tr><tr><td>water_concrete_smooth</td><td>36046</td><td>3.8%</td></tr><tr><td>water_gravel</td><td>6422</td><td>0.7%</td></tr><tr><td>water_mud</td><td>9279</td><td>1.0%</td></tr><tr><td>wet_asphalt_severe</td><td>2161</td><td>0.2%</td></tr><tr><td>wet_asphalt_slight</td><td>24680</td><td>2.6%</td></tr><tr><td>wet_asphalt_smooth</td><td>79404</td><td>8.3%</td></tr><tr><td>wet_concrete_severe</td><td>3854</td><td>0.4%</td></tr><tr><td>wet_concrete_slight</td><td>6301</td><td>0.7%</td></tr><tr><td>wet_concrete_smooth</td><td>66955</td><td>7.0%</td></tr><tr><td>wet_gravel</td><td>36515</td><td>3.8%</td></tr><tr><td>wet_mud</td><td>47560</td><td>5.0%</td></tr>
+                    </table>
+                    <h4>Friction Coefficient by Class:</h4>
+                    <table>
+                        <tr><th>Class</th><th>Min</th><th>Max</th><th>Mean</th><th>Std</th></tr>
+                        <tr><td>dry_asphalt_severe</td><td>0.900</td><td>0.900</td><td>0.900</td><td>0.000</td></tr><tr><td>dry_asphalt_slight</td><td>0.850</td><td>0.850</td><td>0.850</td><td>0.000</td></tr><tr><td>dry_asphalt_smooth</td><td>0.800</td><td>0.800</td><td>0.800</td><td>0.000</td></tr><tr><td>dry_concrete_severe</td><td>0.880</td><td>0.880</td><td>0.880</td><td>0.000</td></tr><tr><td>dry_concrete_slight</td><td>0.830</td><td>0.830</td><td>0.830</td><td>0.000</td></tr><tr><td>dry_concrete_smooth</td><td>0.780</td><td>0.780</td><td>0.780</td><td>0.000</td></tr><tr><td>dry_gravel</td><td>0.650</td><td>0.650</td><td>0.650</td><td>0.000</td></tr><tr><td>dry_mud</td><td>0.550</td><td>0.550</td><td>0.550</td><td>0.000</td></tr><tr><td>fresh_snow</td><td>0.200</td><td>0.200</td><td>0.200</td><td>0.000</td></tr><tr><td>ice</td><td>0.100</td><td>0.100</td><td>0.100</td><td>0.000</td></tr><tr><td>melted_snow</td><td>0.250</td><td>0.250</td><td>0.250</td><td>0.000</td></tr><tr><td>water_asphalt_severe</td><td>0.450</td><td>0.450</td><td>0.450</td><td>0.000</td></tr><tr><td>water_asphalt_slight</td><td>0.500</td><td>0.500</td><td>0.500</td><td>0.000</td></tr><tr><td>water_asphalt_smooth</td><td>0.550</td><td>0.550</td><td>0.550</td><td>0.000</td></tr><tr><td>water_concrete_severe</td><td>0.420</td><td>0.420</td><td>0.420</td><td>0.000</td></tr><tr><td>water_concrete_slight</td><td>0.470</td><td>0.470</td><td>0.470</td><td>0.000</td></tr><tr><td>water_concrete_smooth</td><td>0.520</td><td>0.520</td><td>0.520</td><td>0.000</td></tr><tr><td>water_gravel</td><td>0.350</td><td>0.350</td><td>0.350</td><td>0.000</td></tr><tr><td>water_mud</td><td>0.300</td><td>0.300</td><td>0.300</td><td>0.000</td></tr><tr><td>wet_asphalt_severe</td><td>0.550</td><td>0.550</td><td>0.550</td><td>0.000</td></tr><tr><td>wet_asphalt_slight</td><td>0.600</td><td>0.600</td><td>0.600</td><td>0.000</td></tr><tr><td>wet_asphalt_smooth</td><td>0.650</td><td>0.650</td><td>0.650</td><td>0.000</td></tr><tr><td>wet_concrete_severe</td><td>0.500</td><td>0.500</td><td>0.500</td><td>0.000</td></tr><tr><td>wet_concrete_slight</td><td>0.550</td><td>0.550</td><td>0.550</td><td>0.000</td></tr><tr><td>wet_concrete_smooth</td><td>0.600</td><td>0.600</td><td>0.600</td><td>0.000</td></tr><tr><td>wet_gravel</td><td>0.400</td><td>0.400</td><td>0.400</td><td>0.000</td></tr><tr><td>wet_mud</td><td>0.350</td><td>0.350</td><td>0.350</td><td>0.000</td></tr>
+                    </table>
+                </div>
+                <h3>Visualizations</h3>
+                <img src="thu_class_distribution.png" alt="Class Distribution">
+                <img src="thu_mu_distribution.png" alt="Friction Distribution">
+                
+                <h2>Mendeley Vehicle Dataset</h2>
+                <div class="stats">
+                    <h3>Statistics</h3>
+                    <p><strong>Total CAN Messages:</strong> 0</p>
+                    <p><strong>Duration:</strong> 0.00 seconds</p>
+                    <p><strong>Sample Rate:</strong> 0.0 Hz</p>
+                    <h4>Signal Statistics:</h4>
+                    <table>
+                        <tr><th>Signal</th><th>Min</th><th>Max</th><th>Mean</th><th>Std</th><th>Missing</th></tr>
+                        
+                    </table>
+                </div>
+                <h3>Visualizations</h3>
+                <img src="mendeley_class_distribution.png" alt="Mendeley Class Distribution">
+                <img src="mendeley_mu_distribution.png" alt="Friction Distribution">
+                <img src="signal_correlations.png" alt="Signal Correlations">
+
+                <h2>DAWN Weather Dataset</h2>
+                <div class="stats">
+                    <h3>Statistics</h3>
+                    <p><strong>Total Samples:</strong> 1027</p>
+                    <h4>Weather Distribution:</h4>
+                    <table>
+                        <tr><th>Weather</th><th>Count</th><th>Percentage</th></tr>
+                        <tr><td>dry_asphalt_slight</td><td>323</td><td>31.5%</td></tr><tr><td>fresh_snow</td><td>204</td><td>19.9%</td></tr><tr><td>wet_asphalt_slight</td><td>300</td><td>29.2%</td></tr><tr><td>wet_asphalt_smooth</td><td>200</td><td>19.5%</td></tr>
+                    </table>
+                </div>
+                <h3>Visualizations</h3>
+                <img src="dawn_class_distribution.png" alt="DAWN Weather Distribution">
+                <img src="dawn_mu_distribution.png" alt="DAWN Estimated Friction">
+                
+                <h2>Custom Dataset</h2>
+                <div class="stats">
+                    <p><strong>Total Samples:</strong> 0</p>
+                    <p><strong>Total Images:</strong> 0</p>
+                </div>
+                
+                <h2>Recommendations</h2>
+                <div class="stats">
+                    <p>[WARNING] Class 'dry_asphalt_severe' has only 0.7% of samples. Consider data augmentation.<br>[WARNING] Class 'dry_asphalt_slight' has only 2.8% of samples. Consider data augmentation.<br>[WARNING] Class 'dry_concrete_severe' has only 4.1% of samples. Consider data augmentation.<br>[WARNING] Class 'dry_concrete_slight' has only 1.7% of samples. Consider data augmentation.<br>[WARNING] Class 'water_asphalt_severe' has only 0.3% of samples. Consider data augmentation.<br>[WARNING] Class 'water_asphalt_slight' has only 0.5% of samples. Consider data augmentation.<br>[WARNING] Class 'water_concrete_severe' has only 0.6% of samples. Consider data augmentation.<br>[WARNING] Class 'water_concrete_slight' has only 0.4% of samples. Consider data augmentation.<br>[WARNING] Class 'water_concrete_smooth' has only 3.8% of samples. Consider data augmentation.<br>[WARNING] Class 'water_gravel' has only 0.7% of samples. Consider data augmentation.<br>[WARNING] Class 'water_mud' has only 1.0% of samples. Consider data augmentation.<br>[WARNING] Class 'wet_asphalt_severe' has only 0.2% of samples. Consider data augmentation.<br>[WARNING] Class 'wet_asphalt_slight' has only 2.6% of samples. Consider data augmentation.<br>[WARNING] Class 'wet_concrete_severe' has only 0.4% of samples. Consider data augmentation.<br>[WARNING] Class 'wet_concrete_slight' has only 0.7% of samples. Consider data augmentation.<br>[WARNING] Class 'wet_gravel' has only 3.8% of samples. Consider data augmentation.<br>[WARNING] Class 'wet_mud' has only 5.0% of samples. Consider data augmentation.</p>
+                </div>
+            </body>
+            </html>
+            

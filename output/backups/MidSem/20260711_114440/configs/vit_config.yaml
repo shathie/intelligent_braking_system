@@ -1,0 +1,24 @@
+model:
+  name: "vit_base_patch16_224"
+  pretrained: true
+  num_classes: 27  # 26 granular surface types + background (dry_asphalt_severe/slight/smooth, dry_concrete_severe/slight/smooth, dry_gravel, dry_mud, fresh_snow, ice, melted_snow, water_asphalt_severe/slight/smooth, water_concrete_severe/slight/smooth, water_gravel, water_mud, wet_asphalt_severe/slight/smooth, wet_concrete_severe/slight/smooth, wet_gravel, wet_mud)
+  patch_size: 16
+  embed_dim: 768
+  depth: 12
+  num_heads: 12
+  mlp_ratio: 4
+  drop_rate: 0.1
+
+training:
+  batch_size: 32
+  learning_rate: 3e-4
+  weight_decay: 0.01
+  epochs: 100
+  warmup_epochs: 5
+  optimizer: "adamw"
+  scheduler: "cosine"
+  augmentation:
+    resize: 224
+    horizontal_flip: true
+    color_jitter: 0.2
+    random_erase: 0.1

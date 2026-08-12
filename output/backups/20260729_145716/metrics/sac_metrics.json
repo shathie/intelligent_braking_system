@@ -1,0 +1,38 @@
+{
+  "dry": {
+    "stopping_distance": 96.77526527276834,
+    "stopping_distance_std": 1.4210854715202004e-14,
+    "stopping_time": 4.999999999999938,
+    "stopping_time_std": 0.0,
+    "max_jerk": 240.6395941564378,
+    "max_jerk_std": 2.842170943040401e-14,
+    "num_episodes": 10
+  },
+  "wet": {
+    "stopping_distance": 96.80017764192739,
+    "stopping_distance_std": 1.4210854715202004e-14,
+    "stopping_time": 4.999999999999938,
+    "stopping_time_std": 0.0,
+    "max_jerk": 52.03363708888404,
+    "max_jerk_std": 0.0,
+    "num_episodes": 10
+  },
+  "icy": {
+    "stopping_distance": 96.95066573503713,
+    "stopping_distance_std": 1.4210854715202004e-14,
+    "stopping_time": 4.999999999999938,
+    "stopping_time_std": 0.0,
+    "max_jerk": 2.9808941754347122,
+    "max_jerk_std": 4.440892098500626e-16,
+    "num_episodes": 10
+  },
+  "rough": {
+    "stopping_distance": 96.78352949499242,
+    "stopping_distance_std": 0.0,
+    "stopping_time": 4.999999999999938,
+    "stopping_time_std": 0.0,
+    "max_jerk": 122.61914593740764,
+    "max_jerk_std": 0.0,
+    "num_episodes": 10
+  }
+}

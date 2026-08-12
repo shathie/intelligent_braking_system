@@ -1,0 +1,142 @@
+
+            <!DOCTYPE html>
+            <html>
+            <head>
+                <title>Model Evaluation Report</title>
+                <style>
+                    body { font-family: Arial, sans-serif; margin: 20px; }
+                    h1 { color: #333; }
+                    h2 { color: #555; border-bottom: 1px solid #ddd; padding-bottom: 5px; }
+                    h3 { color: #777; }
+                    table { border-collapse: collapse; width: 100%; margin-bottom: 20px; }
+                    th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+                    th { background-color: #f2f2f2; }
+                    .section { background-color: #f9f9f9; padding: 15px; border-radius: 5px; margin-bottom: 20px; }
+                    .highlight { background-color: #e7f3fe; padding: 2px 5px; border-radius: 3px; }
+                    img { max-width: 100%; height: auto; margin: 10px 0; }
+                </style>
+            </head>
+            <body>
+                <h1>Model Evaluation Report</h1>
+                <p>Generated on: 2026-08-11 16:50:39</p>
+                
+                <div class="section">
+                    <h2>Executive Summary</h2>
+                    <p><strong>Device:</strong> cpu</p>
+                    <p><strong>Evaluation Date:</strong> 2026-08-11 16:50:39</p>
+                    <p><strong>Overall Performance:</strong> <span class="highlight">ViT Accuracy: 69.3%, Temporal MAE: 0.0000, Fusion MAE: 0.1000, PINN MSE: 0.0187, Avg Stopping Distance: 75.73m</span></p>
+                </div>
+                
+                <div class="section">
+                    <h2>Vision Transformer (ViT) Performance</h2>
+                    
+        <p><strong>Classification Accuracy:</strong> 69.27%</p>
+        <h3>Detailed Metrics:</h3>
+        <table>
+            <tr><th>Metric</th><th>Value</th></tr>
+            <tr><td>Precision (Macro)</td><td>0.4393</td></tr>
+            <tr><td>Recall (Macro)</td><td>0.4598</td></tr>
+            <tr><td>F1 Score (Macro)</td><td>0.4233</td></tr>
+            <tr><td>Precision (Weighted)</td><td>0.7299</td></tr>
+            <tr><td>Recall (Weighted)</td><td>0.6927</td></tr>
+            <tr><td>F1 Score (Weighted)</td><td>0.7019</td></tr>
+        </table>
+        <h3>Per-Class Performance:</h3>
+        <table>
+            <tr><th>Class</th><th>Precision</th><th>Recall</th></tr>
+        <tr><td>dry_asphalt_severe</td><td>0.1667</td><td>0.3448</td></tr><tr><td>dry_asphalt_slight</td><td>0.6705</td><td>0.7331</td></tr><tr><td>dry_asphalt_smooth</td><td>0.8873</td><td>0.8104</td></tr><tr><td>dry_concrete_severe</td><td>0.6438</td><td>0.5054</td></tr><tr><td>dry_concrete_slight</td><td>0.2368</td><td>0.4500</td></tr><tr><td>dry_concrete_smooth</td><td>0.6406</td><td>0.4100</td></tr><tr><td>dry_gravel</td><td>0.4592</td><td>0.5625</td></tr><tr><td>dry_mud</td><td>0.4880</td><td>0.5259</td></tr><tr><td>fresh_snow</td><td>0.8889</td><td>0.8172</td></tr><tr><td>ice</td><td>0.5775</td><td>0.5467</td></tr><tr><td>melted_snow</td><td>0.8171</td><td>0.9178</td></tr><tr><td>water_asphalt_severe</td><td>0.0833</td><td>0.1111</td></tr><tr><td>water_asphalt_slight</td><td>0.2000</td><td>0.2500</td></tr><tr><td>water_asphalt_smooth</td><td>0.7500</td><td>0.3371</td></tr><tr><td>water_concrete_severe</td><td>0.1948</td><td>0.6000</td></tr><tr><td>water_concrete_slight</td><td>0.0000</td><td>0.0000</td></tr><tr><td>water_concrete_smooth</td><td>0.4000</td><td>0.2273</td></tr><tr><td>water_gravel</td><td>0.0833</td><td>0.1538</td></tr><tr><td>water_mud</td><td>0.3750</td><td>0.2222</td></tr><tr><td>wet_asphalt_severe</td><td>0.0750</td><td>0.7500</td></tr><tr><td>wet_asphalt_slight</td><td>0.5236</td><td>0.8162</td></tr><tr><td>wet_asphalt_smooth</td><td>0.8898</td><td>0.8322</td></tr><tr><td>wet_concrete_severe</td><td>0.2500</td><td>0.2857</td></tr><tr><td>wet_concrete_slight</td><td>0.0000</td><td>0.0000</td></tr><tr><td>wet_concrete_smooth</td><td>0.6000</td><td>0.3273</td></tr><tr><td>wet_gravel</td><td>0.5167</td><td>0.5254</td></tr><tr><td>wet_mud</td><td>0.4419</td><td>0.3519</td></tr></table>
+                </div>
+
+                <div class="section">
+                    <h2>Temporal Network Performance</h2>
+                    
+        <p><strong>Sequence Reconstruction RMSE:</strong> 0.000000</p>
+        <p><strong>Sequence Reconstruction MAE:</strong> 0.000000</p>
+        <p><strong>R^2 Score:</strong> 1.000000</p>
+        
+                </div>
+
+                <div class="section">
+                    <h2>Fusion Network Performance</h2>
+                    
+        <p><strong>Friction Proxy RMSE:</strong> 0.138192</p>
+        <p><strong>Friction Proxy MAE:</strong> 0.099985</p>
+        <p><strong>R^2 Score:</strong> 0.586334</p>
+        
+                </div>
+                
+                <div class="section">
+                    <h2>Physics-Informed Neural Network (PINN) Performance</h2>
+                    
+        <p><strong>Mean Squared Error:</strong> 0.018710</p>
+        <p><strong>R^2 Score:</strong> 0.593104</p>
+        <h3>Detailed Metrics:</h3>
+        <table>
+            <tr><th>Metric</th><th>Value</th></tr>
+            <tr><td>RMSE</td><td>0.136784</td></tr>
+            <tr><td>MAE</td><td>0.096183</td></tr>
+            <tr><td>Max Error</td><td>0.644935</td></tr>
+            <tr><td>Median Error</td><td>0.056293</td></tr>
+            <tr><td>Std Error</td><td>0.136763</td></tr>
+        
+            <tr><td>MSE (Low Friction)</td><td>0.063703</td></tr>
+            <tr><td>MAE (Low Friction)</td><td>0.222643</td></tr>
+            
+            <tr><td>MSE (High Friction)</td><td>0.022660</td></tr>
+            <tr><td>MAE (High Friction)</td><td>0.110700</td></tr>
+            </table>
+                </div>
+                
+                <div class="section">
+                    <h2>Soft Actor-Critic (SAC) Agent Performance</h2>
+                    
+        <table>
+            <tr><th>Surface</th><th>Stopping Distance (m)</th><th>Stopping Time (s)</th><th>Max Jerk (m/s^3)</th></tr>
+        
+            <tr>
+                <td>dry</td>
+                <td>25.13 +/- 0.00</td>
+                <td>2.51 +/- 0.00</td>
+                <td>0.96 +/- 0.00</td>
+            </tr>
+            
+            <tr>
+                <td>wet</td>
+                <td>50.15 +/- 0.00</td>
+                <td>4.98 +/- 0.00</td>
+                <td>0.16 +/- 0.00</td>
+            </tr>
+            
+            <tr>
+                <td>icy</td>
+                <td>194.12 +/- 0.00</td>
+                <td>19.03 +/- 0.00</td>
+                <td>0.01 +/- 0.00</td>
+            </tr>
+            
+            <tr>
+                <td>rough</td>
+                <td>33.50 +/- 0.00</td>
+                <td>3.34 +/- 0.00</td>
+                <td>0.46 +/- 0.00</td>
+            </tr>
+            </table>
+                </div>
+                
+                <div class="section">
+                    <h2>Visualizations</h2>
+                    <h3>Classification Results</h3>
+                    <img src="plots/confusion_matrix.png" alt="Confusion Matrix">
+                    <h3>Friction Estimation</h3>
+                    <img src="plots/friction_prediction.png" alt="Friction Prediction">
+                    <h3>Braking Performance</h3>
+                    <img src="plots/braking_simulation.png" alt="Braking Simulation">
+                </div>
+                
+                <div class="section">
+                    <h2>Recommendations</h2>
+                    <p>[WARNING] ViT accuracy is below 90%. Consider: (1) More training data, (2) Larger model, (3) Better augmentation.<br>[WARNING] Low friction estimation has high error. This is critical for safety. Consider collecting more low-mu data.<br>[WARNING] Stopping distance on wet surface is >40m. Consider tuning the reward function or improving friction estimation.<br>[WARNING] Stopping distance on icy surface is >40m. Consider tuning the reward function or improving friction estimation.</p>
+                </div>
+            </body>
+            </html>
+            
